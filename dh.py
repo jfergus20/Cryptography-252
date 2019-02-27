@@ -1,5 +1,7 @@
+######################
+# Diffie-Hellman
+######################
 import random
-
 def dh(g,p,B):
 	a = random.randint(1,2**256)
 
