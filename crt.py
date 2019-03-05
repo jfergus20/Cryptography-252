@@ -30,15 +30,7 @@ def crt(a1,m1,a2,m2):
 
 	x = a1 + (m1 * y)
 	####################
-	# x = a1 + (m1 * y),  y e Z
-	# a1 + (m1 * y) = a2 (mod m2)
-	# m1 * y = a2 - a1 (mod m2)
-	# solve for y by multiplying both sides by inv(m1,m2)
-	# y = (a2-a1) * inv(m1,m2) (mod m2)
-	# subsitute y
-	# x = a1 + (m1 * y)
-
-	# return x st x = a1 mod m1 and x = a2 mod m2
+	
 	return x
 
 
