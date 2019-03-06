@@ -1,22 +1,19 @@
 ######################
-# Diffie-Hellman
+# Diffie-Hellman/Alice
+# Given a prime number p, an element g ∈ Z/pZ, and Bob’s transmission B
+# function should return a pair of two numbers A,S, where A is the number you transmit to Bob, and S is the shared secret
 ######################
 import random
 def dh(g,p,B):
 	a = random.randint(1,2**256)
 
 	return (pow(g,a,p), pow(B,a,p))
-
-
-	
 	
 """
-
-
 # TEST CASES
-# Check that A^b is congruent to S mod p
 
-# maybe fix a?
+
+
 b = 8592
 print("dh:")
 A,S,p = dh(34482,46307,31043)
